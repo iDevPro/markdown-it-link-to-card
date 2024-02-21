@@ -8,7 +8,8 @@
   "exports": {
     ".": {
       "require": "./dist/markdown.cjs.min.js",
-      "import": "./dist/markdown.esm.min.js"
+      "import": "./dist/markdown.esm.min.js",
+      "module": "./dist/markdown.esm.min.js"
     }
   },
   "files": [
