@@ -22,8 +22,14 @@ export default class LocalFileCache<V extends Record<string, any>> {
     try {
       const content = fs.readFileSync(CONFIG_FILE(), "utf-8");
       const data = JSON.parse(content);
-      if (isPureObject(data)) result = data;
-    } catch {}
+      if (isPureObject(data)) {
+        result = data;
+      } else { 
+        result = undefined;
+      }
+    } catch {
+      result = undefined;
+    }
 
     return result;
   }
