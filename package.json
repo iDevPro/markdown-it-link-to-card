@@ -7,7 +7,7 @@
   "types": "./types/index.d.ts",
   "exports": {
     ".": {
-      "require": "./dist/markdown.cjs.min.js",
+      // "require": "./dist/markdown.cjs.min.js",
       "import": "./dist/markdown.esm.min.js"
     }
   },
